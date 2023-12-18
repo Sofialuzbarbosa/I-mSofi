@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>I'm Sofi</title>
     <style>
         body {
             font-family: Ledger, sans-serif;
-            background-image: url('https://lh3.googleusercontent.com/pw/ADCreHdQMj2kpQqvxIU1gQxD2DQYimXuH3uHr0l5lEccPcOQQhepPCSRXGgFNMzrSpczRMYuKu3QI7gfuoDVaYj4RHmQn9-o6lm8uEkFqP13ba74Pa9M_R31YO6mvS_9J3QA2ZmCt6szqeb2DsV6lRKuVWW_=w946-h1261-s-no?authuser=0');
+            background-image: url('https://lh3.googleusercontent.com/pw/ABLVV87tefsIu_WJkm6MIG2tjsRwkT63ZVnK14npeI2C1YcZxhWTvCP9R0iNW4JRbo64DVD8iHJJUtCDNWaPhOf7LXjk_qjGlZr6IAkE95DlOM0RI3iMS4aisjA1FKvoENnjVkIqoy2AlZ70dkVOELDrL42DhepW8WAynHx8hlqDg_a5PWS2YAStbB-buVFMrOmeYPebpmf7rBZFO8m6Krc5EmfK4796Sr4ufu6LnumyhwkoMT8vCez1wH1HOq6jcc44ZgIOcjRKYtvOAkXLAVYwOgHQZovxaRLWShWG1edYG6VOk0BWYqUpSjK8sWfq28P4vtwZNniqhVDzZpptu7uxd-_0LfZkRoNf-XCtpWIJzulrdzAaPs99wPrww5repN-VgUFUlUH8AUDDJxRLh_-XPD3fll0bQ9j4-PkjjebFY1pyHhOAiblJVmWy9_lpo-UYW5uhEFBVFHYrVQdyqUleJG5VxNqT5M-SdUV2oLilhIlwLiHpN7dI9XdzbI01mWAFrYCkwQQ74FrV_6CjdMkcL723IODRHgHbGhytpRaCGXzg_GZZe_atbtCVvUWRQgxcYOXqWxsk7VCAo5KS1R_Zt2OYrj8PQBTMOH4xhzyrnUK-p7HwrHS_gi_vAq9A41_G8BGLvjdyrDOU9V2Vt-tLuS-ONQSnHhhUM-QxtNZMIRSCNa4xg1kvrSuns01lPqqK04pQYdoZifK_FpfzGb2fIZ3f-wwxndXjWyn-TDQYbxEfGa6A4ZSQdoiFQJSPvTvWpFJ8gdC2mdNjKWcc0Bq3wI-08tN-0o2fUvjP-Bu1jpgphA2wljArNl_YiJytM3qkX3OVaBZfmW853PQKubda3h-cP-mehWYW2O6Hb_pmvIkp5LAFUZSfepa6wpOeiQ=w996-h1328-s-no-gm?authuser=0');
             background-size: cover;
-            background-position: center center;
+            background-position: center;
             background-repeat: no-repeat; /* Prevents image from repeating */
-            padding: 10px;
-            margin: 10;
+            padding: 20px;
+            margin: 20;
             display: flex;
             flex-direction: row;
             overflow-x: hidden;
         }
 
         header {
-            background-color: ;
+            background-color: none;
             padding: 70px;
         }
 
         ul {
             list-style-type: none;
             font-family: "Ledger", sans-serif;
-            color: #00000;
+            color: #0000;
             padding: 20px;
             position: absolute;
             top: 59%; /* Position vertically at the center */
@@ -42,12 +43,21 @@
             font-family: "Ledger", sans-serif;
             display: block;
             padding: 20px;
-            background-color: ;
+            background-color: rgb(230, 240, 250 , 0.3); 
             text-decoration: none;
             color: #333;
             border: 0.9px solid #8C8C8B;
             border-radius: 50px;
             text-align: center;
+            @keyframes swipeAnimation {
+            from {
+                 transform: translateX(100%);
+            }
+            to {
+             transform: translateX(0);
+  }
+}
+
 
         }
         ul li a:hover {
@@ -65,7 +75,7 @@
             font-family: "Ledger", sans-serif;
             letter-spacing: 4px;
             font-size: 60px;
-            color: #000000;
+            color: rgb(232, 200, 200,0.8);
             padding: 20px;
             position: absolute;
             margin-top: 20px; /* Top margin */
@@ -77,7 +87,7 @@
          h2 {
             font-family: "Ledger", sans-serif;
             font-size: 30px;
-            color: #333;
+            color: rgb(232, 200, 200,0.6);
             padding: 20px;
             position: absolute;
             top: 35%; /* Position vertically at the center */
@@ -95,6 +105,7 @@
             width: 100%;
         }
 
+        
     </style>
 </head>
 <body>
@@ -113,7 +124,6 @@
 
 
 <footer>
-    &copy; 2023 "I'm Sofi" All Rights Reserved
-</footer>
+    &copy; 2023
 </body>
 </html>

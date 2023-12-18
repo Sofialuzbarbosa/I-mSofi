@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyPlace</title>
+  <style>
+   body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 80vh;
+    }
+
+    button {
+      font-size: 18px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="changeImage(-1)">Previous</button>
+  <img id="galleryImage" src="image1.jpg" alt="Gallery Image">
+  <button onclick="changeImage(1)">Next</button>
+
+  <script>
+    var currentImageIndex = 1;
+    var maxImages = 3; // Change this to the total number of images in your gallery
+
+    function changeImage(direction) {
+      currentImageIndex += direction;
+
+      // Ensure the index stays within bounds
+      if (currentImageIndex < 1) {
+        currentImageIndex = maxImages;
+      } else if (currentImageIndex > maxImages) {
+        currentImageIndex = 1;
+      }
+
+      // Update the image source
+      var image = document.getElementById('galleryImage');
+      image.src = 'image' + currentImageIndex + '.jpg';
+    }
+  </script>
+
+</body>
+
+</html>

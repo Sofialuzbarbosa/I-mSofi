@@ -5,41 +5,87 @@
     <title>AboutMe</title>
   <style>
         body {
-            background-color: #C0C0C0;
-            margin: 0;
-            padding: 0;
+            background-image: url('https://lh3.googleusercontent.com/pw/ABLVV8584rPAnwQFaRxQA1ZiaWw_VOe96koLJ2SYEGQ1SDWN-STpOBzKLyfIy36pKuythIK_d6dbXz2QsxH1159VwBrNBhJvuwALuFV8YEbUTyzAInoDeVBxsR2iWo5uvF32-RPIjf5xx1zWY6ZnTD4kDtUNoR5M8gej6ekFhJVbmNzamGf9vNWPTPnjgKV-rrGVU2XrtCxCmFmWPRqsGhOxmR7h3swtxDdAtXm0drTdvfsrGtdzd-FzJg1kQIrPJZf8wpzzY8-nGgpwynlwm9PsA-i5mYr8uCZX_0ZJcmAMvsOusO4x_dwQHAU4R4m_23ZYP7cQhXFAgACpEPajiFm_IxY8AdBchc2VuL87jXW6oi7WSwLvKvpNTzc9X8bgpWlUXTE2WPUSLF1VW8O5Vdin2QPvl1OPy6WmMxorT--0pcptq0m_OA2b1iis227_tWBYer1LvynQBLbRxb0fN9Gk73WHcfn6eaIeopCl4SXA_Jd2RgLu39U_2BWlnlP3K8qOvVANwdt4sz2Q7tAogvP0NXhFQlAypYPM3xGBovFlkC1-7zfY63wjgW5eM7NvD8EIw2TeZacgA37LCqRM4_VAovkeBAgO2dSpLYKE8xcluIwMZ2qf2YaJskVSiTPdbbjWpy5153ydyWosQI7HixMg6WHcstZMArZkYoiFeVXZVVc6KWhFItkez1d85fJ6k8Fdf0TA7qBt9gdK9CERo7869DwKZZ-DGFSlr5CWpQlkOsmgrr1l9WZe4gh0TWTytz5lmH6CmmrzURDiWzyR9zgt0Fhex8EyMTASCe7Szh9VVrGAHgb5zCjhfGkAVCXaHCUqmdcHsasNjWUcl4bXriumGq60yQlvpIBOOuvbmBijwTT91Vwiebrt6DYE0gEltQ=w1771-h1328-s-no-gm?authuser=0');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; /* Prevents image from repeating */
+            padding: 20px;
+            margin: 20;
             display: flex;
-            justify-content: center;
+            flex-direction: row;
+            overflow-x: hidden;
+            background-color: #fffbfb;
+            margin: 30;
+            padding: 50;
+            display: flex;
+            justify-content: left;
             align-items: center;
-            height: 100vh; /* Ensure full viewport height */
+            height: 90vh; /* Ensure full viewport height */
         }
 
+    
         /* Center-align text */
         .center-text {
-           text-align: center;
-            font-family: Arial, sans-serif;
-            font-size: 24px;
+           text-align: cente;
+            font-family: "Ledger", sans-serif;
+            font-size: 23px;
             color: #333; /* Text color */
-            background-color: #ffffff; /* White box background */
-            padding: 20px; /* Padding around the box */
-            border-radius: 10px; /* Rounded corners for the box */
+            background-color: rgb(209, 217, 223,0.6);
+            padding: 30px; /* Padding around the text inside the box */
+            width: 300px; /* Width of the box */
+            margin: 155px; /* Margin around the box */
+            border-radius: 30px; /* Rounded corners for the box */
         }
+
+
         .go-back-button {
-            background-color: #3498db; /* Button background color */
+            
+            background-color: rgba(107, 170, 218, 0.8);
             color: #fff; /* Button text color */
             border: none; /* Remove button border */
             padding: 10px 20px; /* Adjust padding */
             border-radius: 5px; /* Rounded corners for the button */
             cursor: pointer; /* Change cursor on hover (optional) */
         }
+
+        .go-back-button a:hover {
+            background-color: rgba(248, 249, 249, 0.6);
+        }
+
+        .go-foward-button {
+            
+            background-color: rgba(107, 170, 218, 0.8);
+            color: #fff; /* Button text color */
+            border: none; /* Remove button border */
+            padding: 10px 20px; /* Adjust padding */
+            border-radius: 5px; /* Rounded corners for the button */
+            cursor: pointer; /* Change cursor on hover (optional) */
+        }
+  
+        .go-foward-button a:hover {
+            background-color: rgba(248, 249, 249, 0.6);
+        }
+  
+  
+    
+
     </style>
 </head>
 <body>
 <div class="center-text">
-  <p>Hi! Thanks for visit my page.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+  <p>Hey friends!
+
+    I'm Sofi, a curious soul who finds joy in a little bit of everything. Nature is my happy place, and every snapshot you come across here? Yep, I was behind the lens!
+    
+    Sunsets and the great outdoors are my vibe. I'm all about discovering the new, diving into random projects, and being part of an awesome team. Quality is my game, and I love giving my best in everything I do.
+    
+    Excited to share this journey with you!
 
   </p>
   <button class="go-back-button" onclick="goBack()">Go Back</button>
+  <button class="go-foward-button" onclick="onclick()">My Place</button>
+
 
   <script>
         // JavaScript function to go back to the previous page
@@ -47,6 +93,15 @@
             window.history.back();
         }
     </script>
+
+<script>
+    function redirectToPage() {
+      <a href="MyPlace.html">MyPlace</a>   
+    }
+  </script>
+
+
+
 </div>
 </body>
 </html>
